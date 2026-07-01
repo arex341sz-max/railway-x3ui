@@ -20,6 +20,7 @@ RUN mkdir -p /etc/x-ui /var/log/x-ui
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-EXPOSE ${PORT}
+# پورت را داینامیک می‌کنیم
+EXPOSE ${PORT:-2053}
 
 CMD ["/start.sh"]
