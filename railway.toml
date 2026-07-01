@@ -4,9 +4,4 @@
 
 [deploy]
   restartPolicyType = "always"
-
-[deploy.ports]
-  [deploy.ports.54321]
-    protocol = "tcp"
-  [deploy.ports.443]
-    protocol = "tcp"
+  # ریلیوِی به صورت خودکار متغیر PORT رو می‌سازه، نیازی به هاردکد نیست
